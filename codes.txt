@@ -1,7 +1,0 @@
-App api_id:
-10221683
-
-App api_hash:
-4fde13d8d9e62daad1b89800a67ebed6
-
-https://stackoverflow.com/questions/64196443/get-last-message-s-from-telegram-channel-with-python
