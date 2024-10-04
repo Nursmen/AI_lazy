@@ -5,11 +5,12 @@ import openai
 import dotenv
 import os
 
-API_ID = 10221683     
-API_HASH = '4fde13d8d9e62daad1b89800a67ebed6' 
+dotenv.load_dotenv()
+
+API_ID = int(os.getenv('TELEGRAM_API_ID'))
+API_HASH = os.getenv('TELEGRAM_API_HASH')
 client = TelegramClient('my-client', API_ID, API_HASH)
 
-dotenv.load_dotenv()
 openai.api_key = os.getenv('OPENAI_API_KEY')
 openai_client = openai.OpenAI()
 
